@@ -1,5 +1,10 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
+
+<head>
+  <title>Django Framwork</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <head>
   <meta charset="utf-8">
@@ -20,6 +25,11 @@
 </head>
 
 <body>
+  <!-- website main title and logo -->
+  <div class="container-fluid bg-primary text-white">
+    <h1> Django Test Site </h1>
+  </div>
+
   <!-- Navigation bar -->
   <div class="container">
     <ul class="nav nav-pills nav-justified">
@@ -35,7 +45,7 @@
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
           Settings
-        </a></li>
+        </a>
         <div class="dropdown-menu">
           <a class="dropdown-item" href="#">Account Settings</a>
           {% if user.is_authenticated %}
