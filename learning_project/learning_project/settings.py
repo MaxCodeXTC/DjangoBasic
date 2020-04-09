@@ -34,6 +34,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'crispy_forms',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -132,9 +133,9 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATICFILES_DIR=[STATIC_DIR,]
 
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 #MEDIA
 MEDIA_ROOT=MEDIA_DIR
 MEDIA_URL='/media/'
-
 
 LOGIN_URL='/basic_app/user_login'
